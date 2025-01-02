@@ -1,0 +1,6 @@
+.user-main {
+  position: relative;
+  overflow: auto;
+  grid-column: 2 / 3; /* Занимает 2-й столбец */
+  grid-row: 2 / 3;    /* Занимает 2-й ряд */
+}

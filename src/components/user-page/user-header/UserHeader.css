@@ -1,0 +1,11 @@
+.user-header {
+	display: flex;
+	background-color: #0e1014;;
+	border-bottom: 1px solid #171B21;
+	justify-content: center;
+	align-items: center;
+	grid-column-end: 3;
+	grid-column-start: 1;
+	grid-row-end: 2;
+	grid-row-start: 1;
+}

@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 0;
+  margin: 0;
+  color: #fff;
+}
+
+@font-face {
+  font-family: "Suisse Intl Regular"; /* Название шрифта */
+  src: url("../../fonts/suisse-intl-regular.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+#root {
+  font-family: "Suisse Intl Regular", sans-serif;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+}
+
+.admin-page {
+  display: grid;
+  grid-template-columns: fit-content(240px) 1fr;
+  grid-template-rows: 50px auto;
+  grid-gap: 20px;
+  height: 100%;
+}
+
+.admin-page::before {
+  content: '';
+  position: absolute;
+  background-color: #0e1014;;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+}
+
+.admin-page * {
+  z-index: 1;
+}
