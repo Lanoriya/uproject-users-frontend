@@ -14,6 +14,12 @@ export function UserConfigurator() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+
+    if (!username.trim()) {
+      setError('Имя пользователя не может быть пустым');
+      return;
+    }
+
     dispatch(addUserStart()); // Показать, что запрос начался
     try {
       const response = await fetch('http://localhost:8000/users', {
@@ -40,19 +46,20 @@ export function UserConfigurator() {
   };
 
   return (
-    <div>
+    <>
       <h2>Добавить пользователя</h2>
-      <form onSubmit={handleSubmit}>
+      <form className="import-form" onSubmit={handleSubmit}>
         <input
+          className="search-input"
           type="text"
           placeholder="Введите имя пользователя"
           value={username}
           onChange={(e) => setUsername(e.target.value)}
         />
-        <button type="submit">Добавить</button>
+        <button className="search-button" type="submit">Добавить</button>
       </form>
       {error && <p style={{ color: 'red' }}>{error}</p>}
-    </div>
+    </>
   );
 }
 

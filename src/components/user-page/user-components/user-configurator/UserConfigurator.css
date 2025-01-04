@@ -1,0 +1,21 @@
+.search-input {
+  background-color: #171b21;
+	padding: 0.57rem;
+	border: 1px solid transparent;
+	font-size: 0.86rem;
+	width: 100%;
+	max-width: 16rem;
+}
+
+.search-input:hover {
+	border-color: #21262c;
+}
+
+.search-input:focus {
+	background-color: #2f3338;
+}
+
+.import-form {
+	display: flex;
+	grid-gap: 0.57rem;
+}

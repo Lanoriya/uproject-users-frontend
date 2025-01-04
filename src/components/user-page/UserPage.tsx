@@ -5,6 +5,7 @@ import "./Main.css";
 import "../user-page/user-header/UserHeader.css";
 import "../user-page/user-side/UserSide.css";
 import "../user-page/user-main/UserMain.css";
+import "../user-page/user-components/user-configurator/UserConfigurator.css";
 
 export function UserPage() {
   return (

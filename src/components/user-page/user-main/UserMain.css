@@ -3,4 +3,7 @@
   overflow: auto;
   grid-column: 2 / 3; /* Занимает 2-й столбец */
   grid-row: 2 / 3;    /* Занимает 2-й ряд */
+  h2 {
+    margin-bottom: 0.57rem;
+  }
 }
