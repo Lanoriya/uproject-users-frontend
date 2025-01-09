@@ -17,6 +17,20 @@
   outline: none;
 }
 
+*::-webkit-scrollbar {
+  width: 0.3rem;
+}
+
+*::-webkit-scrollbar-track {
+  background: none; /* цвет зоны отслеживания */
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgb(31, 34, 59);    /* цвет бегунка */
+  border-radius: 0.4rem;         /* округлось бегунка */
+  cursor: pointer;
+}
+
 button {
   cursor: pointer;
 }

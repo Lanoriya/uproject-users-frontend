@@ -24,6 +24,7 @@
 	align-items: center;
 	justify-content: center;
 	padding: 0.43rem;
+
 	nav {
 		padding-left: 1rem;
 		width: 100%;
@@ -35,10 +36,12 @@
 	display: flex;
 	flex-direction: column;
 	margin-bottom: 0.71rem;
+
 	h5 {
 		margin-bottom: 0.43rem;
 		font-size: 0.9rem;
 	}
+
 	a {
 		font-size: 0.75rem;
 	}

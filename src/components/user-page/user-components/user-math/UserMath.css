@@ -1,0 +1,56 @@
+.usermath-settings {
+  display: flex;
+	grid-gap: 0.57rem;
+	margin-bottom: 3rem;
+}
+
+.usermath-function {
+	padding: 0.57rem;
+	background: radial-gradient(100% 142.87% at 100% 100%,#a180ff0f,#a180ff00),linear-gradient(0deg,#1b1d23,#1b1d23);
+	textarea {
+		min-width: 16rem;
+		max-width: 16rem;
+		min-height: 16rem;
+		max-height: 16rem;
+		border: none;
+		resize: none;
+	}
+
+	.search-button {
+		display: flex;
+		margin: 0.5rem auto;
+	}
+
+	form, h2 {
+		text-align: center;
+		margin-bottom: 0.5rem;
+	}
+}
+
+.usemath-result {
+	display: flex;
+	flex-direction: column;
+	grid-gap: 0.5rem;
+	p, a {
+		display: flex;
+		align-items: center;
+		grid-gap: 0.5rem;
+		line-height: 1.1rem;
+		font-size: 12px;
+	}
+}
+
+.usemath-result a:hover {
+	opacity: 0.6;
+}
+
+.usemath-result-item {
+	display: flex;
+	grid-gap: 0.57rem;
+	align-items: flex-end;
+	height: 1.5rem;
+}
+
+.progress-bar--green {
+	color: aquamarine;
+}
